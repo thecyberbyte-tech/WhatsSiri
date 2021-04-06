@@ -3,7 +3,7 @@
 ----
 
 <div align="center">
-  <img src="https://gitlab.com/ErdemBey1/whatssiri/raw/master/20210406_162732.jpg" width="200" height="200">
+  <img src="https://gitlab.com/ErdemBey1/whatssiri/raw/master/20210406_162732.jpg" width="400" height="400">
   <h1> WhatsSiri</h1>
 </div>
 <p align="center">
