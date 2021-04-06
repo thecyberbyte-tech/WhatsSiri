@@ -10,7 +10,7 @@
     WhatsSiri projesi - Whatsapp'ı kullanmayı kolay ve eğlenceli hale getirir. 
     <br>
         <a href="https://t.me/WHATSSİRİ">Telegram Kanal</a> |
-        <a href="https://t.me/SiriSupport">Telegram Grup</a> |
+        <a href="https://t.me/SiriSupport">Telegram Grup</a> 
     <br>
 </p>
 
