@@ -1,6 +1,6 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/ErdemBey1/WhatsSiri /root/WhatsAsenaDuplicated
+RUN git clone https://github.com/ErdemBey1/WhatsSiri /root/WhatsSiri
 WORKDIR /root/WhatsSiri/
 ENV TZ=Europe/Istanbul
 RUN npm install supervisor -g
