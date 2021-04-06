@@ -3,7 +3,7 @@
 ----
 
 <div align="center">
-  <img src="https://i.hizliresim.com/(eklenecek).jpg" width="200" height="200">
+  <img src="https://hizliresim.com/qQ2ngP.img" width="200" height="200">
   <h1> WhatsSiri</h1>
 </div>
 <p align="center">
