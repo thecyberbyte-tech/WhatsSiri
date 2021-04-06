@@ -62,7 +62,8 @@ Siri'yi kurarak, bu sorumlulukları kabul etmiş sayılırsınız.
 ```
 
 ## Teşekkür Ederiz
--[Yusuf Usta](https://github.com/YusufUsta) -[WhatsAsena](https://github.com/Yusuf/WhatsAsena) 
+-[Yusuf Usta](https://github.com/YusufUsta) 
+-[WhatsAsena](https://github.com/Yusuf/WhatsAsena) 
 
 ## Lisans
 `GNU General Public Licence v3.0` lisansı.
