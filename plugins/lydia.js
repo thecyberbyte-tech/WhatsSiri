@@ -60,7 +60,7 @@ Siri.addCommand({pattern: 'rmlydia$', fromMe: true, desc: Lang.RMLYDIA_DESC}, (a
     return await message.reply(Lang.DISABLED);
 }));
 
-SiriSiri.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {   
+Siri.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {   
     if (Config.COFFEEHOUSE_API_KEY === false) return;
     var unix = Date.now() / 1000 | 0;
 
