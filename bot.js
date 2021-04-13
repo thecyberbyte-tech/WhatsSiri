@@ -72,7 +72,7 @@ Array.prototype.remove = function() {
     return this;
 };
 
-async function whatsSiri () {
+async function WhatsSiri () {
     await config.DATABASE.sync();
     var StrSes_Db = await WhatsSiriDB.findAll({
         where: {
