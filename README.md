@@ -21,7 +21,7 @@
 
 > [Kurulum Yardımcısı](https://github.com/ErdemBey1/WhatsSiri/wiki)
 
-> [Diğer Dilleri Crowdin Çevirebilirsiniz](https://crowdin.com/project/whatsasena)
+
 
 ## 🔎 WhatsSiri Nedir ?
 **WhatsSiri,** [Erdem Bey](https://github.com/ErdemBey1) tarafından yazılmış bir WhatsApp yardımcı botudur . Hesabınıza giriş yapmaz WhatsApp Web API üzerinde yazılmıştır.
