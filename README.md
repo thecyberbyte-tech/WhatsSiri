@@ -17,7 +17,7 @@
 ----
 
 ## 📢 Kılavuz
-> [Yardım Ve Destek Almak İçin Grubumuz](https://t.me/AsenaSupport)
+> [Yardım Ve Destek Almak İçin Grubumuz](https://t.me/SiriSupport)
 
 > [Kurulum Yardımcısı](https://github.com/ErdemBey1/WhatsSiri/wiki)
 
