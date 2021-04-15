@@ -1,3 +1,13 @@
+/* BU BOT İSTEK ÜZERİNE YAPILMIŞ BİR BOTTUR
+OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEZ
+Telegram / @orgutsahibi
+GitHub / ErdemBey1
+
+WhatsSiri SİRİ-ERDEM/BEY
+
+OWNER|ErdemBey
+*/
+
 const Siri = require('../events');
 const Heroku = require('heroku-client');
 const Config = require('../config');
@@ -18,7 +28,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 Siri.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC}, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/phaticusthiccy/4232b1c8c4734e1f06c3d991149c6fbd')
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install LİNK')
     try {
         var url = new URL(match[1]);
     } catch {

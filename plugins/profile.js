@@ -1,9 +1,11 @@
-/* Copyright (C) 2020 
+/* BU BOT İSTEK ÜZERİNE YAPILMIŞ BİR BOTTUR
+OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEZ
+Telegram / @orgutsahibi
+GitHub / ErdemBey1
 
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
+WhatsSiri SİRİ-ERDEM/BEY
 
-SİRİ USERBOT
+OWNER|ErdemBey
 */
 
 const Siri = require('../events');
