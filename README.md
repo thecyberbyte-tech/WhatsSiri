@@ -27,7 +27,7 @@
 **WhatsSiri,** [Erdem Bey](https://github.com/ErdemBey1) tarafından yazılmış bir WhatsApp yardımcı botudur . Hesabınıza giriş yapmaz WhatsApp Web API üzerinde yazılmıştır.
 
 ### Kolay Yöntem
-[![Run on Repl.it](https://repl.it/badge/github/Quiec/whatsasena)](https://repl.it/)
+[![Run on Repl.it](https://repl.it/@ErdemBey1/WhatsSiri-QR](https://repl.it/)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ErdemBey1/WhatsSiri)
 
@@ -63,7 +63,7 @@ Siri'yi kurarak, bu sorumlulukları kabul etmiş sayılırsınız.
 
 ## Teşekkür Ederiz
 -[Yusuf Usta](https://github.com/YusufUsta) 
--[WhatsAsena](https://github.com/Yusuf/WhatsAsena) 
+
 
 ## Lisans
 `GNU General Public Licence v3.0` lisansı.
