@@ -63,6 +63,7 @@ Siri'yi kurarak, bu sorumlulukları kabul etmiş sayılırsınız.
 
 ## Teşekkür Ederiz
 -[Yusuf Usta](https://github.com/YusufUsta) 
+-[phaticusthiccy](https://github.com/phaticusthiccy)
 
 
 ## Lisans
