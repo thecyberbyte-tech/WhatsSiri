@@ -1,2 +1,2 @@
-Takes gif data for plugins.
+Takes gif data For plugins.
 
