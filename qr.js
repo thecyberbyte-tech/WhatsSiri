@@ -1,11 +1,7 @@
 /* BU BOT İSTEK ÜZERİNE YAPILMIŞ BİR BOTTUR
-OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEZ
-Telegram / @orgutsahibi
-GitHub / ErdemBey1
+OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMİYORUZ
 
-WhatsSiri SİRİ-ERDEM/BEY
-
-OWNER|ErdemBey
+TELEGRAM: @sirisupport
 */
 
 const chalk = require('chalk');
@@ -13,7 +9,7 @@ const {WAConnection} = require('@adiwajshing/baileys');
 const {StringSession} = require('./whatssiri/');
 const fs = require('fs');
 
-async function whatsSiri () {
+async function WhatsSiri () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.logger.level = 'warn';
@@ -21,7 +17,7 @@ async function whatsSiri () {
     
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Siri')}
-${chalk.white.italic('SiriString Kodu Alıcı')}
+${chalk.white.italic('Siri String Kodu Alıcı')}
 
 ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     });
@@ -30,7 +26,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     conn.on('open', () => {
         var st = Session.createStringSession(conn.base64EncodedAuthInfo());
         console.log(
-            chalk.green.bold('Siri String Kodunuz: '), Session.createStringSession(conn.base64EncodedAuthInfo())
+            chalk.green.bold('Siri String Kodunuz : '), Session.createStringSession(conn.base64EncodedAuthInfo())
         );
         
         if (!fs.existsSync('config.env')) {
@@ -38,7 +34,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         }
 
         console.log(
-            chalk.blue.bold('Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz.')
+            chalk.blue.bold('Lütfen üstteki kodun hepsini kopyalayın. Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz. ')
         );
         process.exit(0);
     });
@@ -46,4 +42,4 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     await conn.connect();
 }
 
-whatsSiri()
+WhatsSiri()
