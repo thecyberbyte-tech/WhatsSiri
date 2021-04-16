@@ -1,11 +1,7 @@
 /* BU BOT İSTEK ÜZERİNE YAPILMIŞ BİR BOTTUR
 OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEZ
-Telegram / @orgutsahibi
-GitHub / ErdemBey1
 
-WhatsSiri SİRİ-ERDEM/BEY
-
-OWNER|ErdemBey
+Tg: SiriDev
 */
 
 
@@ -536,7 +532,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
-                                    '\n_Hatayı https://t.me/sirisupport Resmi Yardım Gruba iletebilirsiniz._\n\n' +
+                                    '\n_Hatayı https://chat.whatsapp.com/CSkoS99pFfYLw67Od0qEL8 Yardım Grubuna iletebilirsiniz._\n\n' +
                                     '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false});
 
@@ -641,7 +637,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                 }
                                 else {
                                     return await conn.sendMessage(conn.user.jid, '*🙇🏻 Maalesef Bu Hatayı Okuyamadım! 🙇🏻*' +
-                                        '\n_Daha fazla yardım için grubumuza yazabilirsiniz._'
+                                        '\n_Daha fazla yardım - https://chat.whatsapp.com/CSkoS99pFfYLw67Od0qEL8 - için grubumuza yazabilirsiniz._'
                                         , MessageType.text
                                     );
                                 }
