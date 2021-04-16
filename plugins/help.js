@@ -1,11 +1,7 @@
 /* BU BOT İSTEK ÜZERİNE YAPILMIŞ BİR BOTTUR
 OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEZ
-Telegram / @orgutsahibi
-GitHub / ErdemBey1
 
-WhatsSiri SİRİ-ERDEM/BEY
-
-OWNER|ErdemBey
+WhatsSiri SİRİ-DEV
 */
 
 const Siri = require('../events');
@@ -17,8 +13,8 @@ const h_Des = "Yardım menüsünden botu kullanım hakkında bilgi verir."
 const h_DedEN = "Gives information about using the bot from the Help menu."
 const matchnullEN = "========== *🆘 General Help 🆘* ==========\n\n🔹 *.alive:* Checks if the bot is running.\n\n🔹 *.siri:* Shows the complete list of commands.\n🔹 *.setvar:* It settings config without entering Heroku.\n\n🔸 For more help, use the command ```.help <the topic you want help with>```\nExample: ```.help how can ı turn to public my bot?```\n\n========== *End General Help* =========="
 const matchnull = "========== *🆘 Genel Yardım 🆘* ==========\n\n🔹 *.alive:* Botun çalışıp çalışmadığını kontrol eder.\n🔹 *.siri:* Tüm komut listesini gösterir.\n🔹 *.setvar:* Herokuya girmeden config ayarlar.\n\n🔸 Daha fazla yardım için ```.help <yardım almak istediğiniz konu>``` komutunu kullanın.\nÖrnek: ```.help botumu nasıl public yaparım?```\n\n========== *Genel Yardım Bitti* =========="
-const notfound = "```Almak istediğiniz yardım bulunamadı!```\n```Lütfen daha açıklayıcı bir şekilde sorunu belirtin.```"
-const notfoundEN = "```The help you wanted to get was not found!```\n```Please state the problem in a more descriptive way.```"
+const notfound = "```Almak istediğiniz yardım bulunamadı!```\n```Lütfen daha açıklayıcı bir şekilde sorunu belirtin.```\n```Veya https://chat.whatsapp.com/CSkoS99pFfYLw67Od0qEL8 yardım grubumuza sorun.```"
+const notfoundEN = "```The help you wanted to get was not found!```\n```Please state the problem in a more descriptive way.```\n```Or ask our https://chat.whatsapp.com/CSkoS99pFfYLw67Od0qEL8 help group.```"
 
 // ==================== ALL DESCRİPTİONS ====================
 const pubTR = "Botunuzu public yapmak komutları herkese açık yapacaktır. Public yapıldıktan sonra kullanıcı sadece kişisel ve admin komutlarını kullanabilir hale gelir. Onun dışında komutları kullanamaz.\nBotunuzu public yapmak için *.setvar WORK_TYPE:public* komutunu kullanın."
