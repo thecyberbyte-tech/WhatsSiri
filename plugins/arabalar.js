@@ -29,7 +29,7 @@ Siri.addCommand({pattern: 'cars', fromMe: true, desc: Lang.WP}, (async (message,
     r_text[17] = "https://images.wallpaperscraft.com/image/ford_f_150_raptor_pickup_stones_99495_300x168.jpg";
     r_text[18] = "https://images.wallpaperscraft.com/image/car_db5_aston_martin_93821_300x168.jpg";
 
-    var i = Math.floor(248*Math.random())
+    var i = Math.floor(19*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
