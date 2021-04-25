@@ -36,7 +36,7 @@ Siri.addCommand({pattern: 'ikonk', fromMe: true, desc: Lang.WP}, (async (message
     r_text[24] = "https://i.pinimg.com/236x/cc/fb/8e/ccfb8ef947e559212b256594edd54316.jpg";
     r_text[25] = "https://i.pinimg.com/236x/d5/0e/32/d50e32897cf1f94aae8fd6aba1687f00.jpg";
 
-    var i = Math.floor(248*Math.random())
+    var i = Math.floor(27*Math.random())
 
     var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
