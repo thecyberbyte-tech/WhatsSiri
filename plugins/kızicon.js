@@ -3,9 +3,9 @@ const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 
 const Language = require('../language');
-const Lang = Language.getString('iconk');
+const Lang = Language.getString('ikonk');
 
-Siri.addCommand({pattern: 'iconk', fromMe: true, desc: Lang.WP}, (async (message, match) => {
+Siri.addCommand({pattern: 'ikonk', fromMe: true, desc: Lang.WP}, (async (message, match) => {
 
     var r_text = new Array ();
 
