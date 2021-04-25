@@ -531,6 +531,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                             await command.function(whats, match);
                         }
                         catch (error) {
+                            if (error.message.includes('429')) return;
                             
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WHATSSIRI] --*' + 
