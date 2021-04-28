@@ -12,8 +12,4 @@ Siri.addCommand({pattern: 'as', fromMe: true}, (async (message, match) => {
 
 }));
 
-Siri.addCommand({pattern: 'infoas', fromMe: true}, (async (message, match) => {
 
-    await message.sendMessage("*Codded by Erdem Bey*\n*WhatsApptada Selamlara Karşılık Verelim dimi.*\n💻Usage: *.as*")
-
-}));
