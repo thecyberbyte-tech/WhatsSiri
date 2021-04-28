@@ -4,7 +4,6 @@ const {MessageType} = require('@adiwajshing/baileys');
 Siri.addCommand({pattern: 'bb', fromMe: true}, (async (message, match) => {
 
     await message.sendMessage('*Küstüm*');
-    await message.sendMessage('*Ben Gidiyom*');
     await message.sendMessage('*Şaka Şaka*');
     await.message.sendMessage('*Küsmedim Ama Gidiyorum*');
   
