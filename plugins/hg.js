@@ -11,8 +11,4 @@ Siri.addCommand({pattern: 'hg', fromMe: true}, (async (message, match) => {
 
 }));
 
-Siri.addCommand({pattern: 'infohg', fromMe: true}, (async (message, match) => {
 
-    await message.sendMessage("*Codded by Erdem Bey*\n*WhatsApptada Hoşgeldin Plugini*\n💻Usage: *.hg*")
-
-}));
