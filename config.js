@@ -21,7 +21,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatssiri.db' : proce
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v1.0 Global Stable',
+    VERSION: 'v1.1 Global Stable',
     SESSION: process.env.SIRI_SESSION === undefined ? '' : process.env.SIRI_SESSION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
