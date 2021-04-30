@@ -68,5 +68,3 @@ Siri'yi kurarak, bu sorumlulukları kabul etmiş sayılırsınız.
 ## Lisans
 `GNU General Public Licence v3.0` lisansı.
 
-### Telegram USERBOT
--[SİRİ USERBOT](https://github.com/ErdemBey1/Siriuserbot)
