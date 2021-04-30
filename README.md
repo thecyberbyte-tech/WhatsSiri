@@ -1,4 +1,4 @@
-[TELEGRAM USERBOTUMUZ BULUNMAKTADIR TIKLA GEL](https://t.me/Siriuserbot)
+
 <div align="center">
   <img src="https://gitlab.com/ErdemBey1/whatssiri/raw/master/20210406_162732.jpg" width="400" height="400">
   <h1> WhatsSiri</h1>
