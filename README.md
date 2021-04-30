@@ -61,9 +61,8 @@ Kesinlikle Siri yöneticileri sorumluluk kabul etmez.
 Siri'yi kurarak, bu sorumlulukları kabul etmiş sayılırsınız.
 ```
 
-## Teşekkür Ederiz
--[Yusuf Usta](https://github.com/YusufUsta) 
--[phaticusthiccy](https://github.com/phaticusthiccy)
+### Geliştiriciler / Developers
+[![Erdem Bey](https://github.com/erdembey1.png?size=100)](https://github.com/erdembey1)  [![Midy](https://github.com/ribonney.png?size=100)](https://github.com/ribonney)  [![Berce](https://github.com/must4f.png?size=100)](https://github.com/must4f)
 
 
 ## Lisans
