@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://gitlab.com/ErdemBey1/whatssiri/raw/master/20210406_162732.jpg" width="400" height="400">
+  <img src="https://github.com/ErdemBey1/WhatsSiri/blob/master/logo.jpg" width="400" height="400">
   <h1> WhatsSiri</h1>
 </div>
 <p align="center">
