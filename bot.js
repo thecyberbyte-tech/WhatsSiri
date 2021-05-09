@@ -1,5 +1,5 @@
 /* BU BOT İSTEK ÜZERİNE YAPILMIŞ BİR BOTTUR
-OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEZ
+OLASI DURUMLARDAN BİZ SORUMLULUK KABUL ETMEYİZ
 
 Telegram / @orgutsahibi
 
@@ -196,7 +196,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         var degisiklikler = Lang.NEW_UPDATE;
                         commits['all'].map(
                             (commit) => {
-                                degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                                degisiklikler += '💞 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
                             }
                         );
         
@@ -240,7 +240,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         var degisiklikler = Lang.NEW_UPDATE;
                         commits['all'].map(
                             (commit) => {
-                                degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                                degisiklikler += '💞 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
                             }
                         );
         
@@ -287,7 +287,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         var degisiklikler = Lang.NEW_UPDATE;
                         commits['all'].map(
                             (commit) => {
-                                degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                                degisiklikler += '💞 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
                             }
                         );
         
@@ -332,7 +332,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                         var degisiklikler = Lang.NEW_UPDATE;
                         commits['all'].map(
                             (commit) => {
-                                degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                                degisiklikler += '💞 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
                             }
                         );
         
@@ -539,7 +539,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
-                                    '\n_Hatayı https://chat.whatsapp.com/CSkoS99pFfYLw67Od0qEL8 Yardım Grubuna iletebilirsiniz._\n\n' +
+                                    '\n_Hata https://chat.whatsapp.com/FGQ5opSHO0JK5nyVkW58zu Yardım Grubuna iletebilirsiniz._\n\n' +
                                     '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false});
 
@@ -644,7 +644,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                 }
                                 else {
                                     return await conn.sendMessage(conn.user.jid, '*🙇🏻 Maalesef Bu Hatayı Okuyamadım! 🙇🏻*' +
-                                        '\n_Daha fazla yardım - https://chat.whatsapp.com/CSkoS99pFfYLw67Od0qEL8 - için grubumuza yazabilirsiniz._'
+                                        '\n_Daha fazla yardım - https://chat.whatsapp.com/FGQ5opSHO0JK5nyVkW58zu - için grubumuza yazabilirsiniz._'
                                         , MessageType.text
                                     );
                                 }
@@ -654,7 +654,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
                                     '\n*WhatsSiri an error has occurred!*'+
                                     '\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
                                     '\n_You can write to our Telegram group for help._' +
-                                    '\n_Aslo you can join our support group:_ https://t.me/sirisupport' +
+                                    '\n_Aslo you can join our support group:_ https://chat.whatsapp.com/FGQ5opSHO0JK5nyVkW58zu' +
                                     '\n_This message should have gone to your number (saved messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
