@@ -617,7 +617,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
             if (gb !== false) {
 
-                await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("/root/WhatsSiri/media/gif/sa,/mp4"), MessageType.video, {mimetype: Mimetype.mpeg, caption: gb.message});
+                await conn.sendMessage(msg.key.remoteJid, fs.readFileSync("/root/WhatsSiri/media/gif/tony.mp4"), MessageType.video, {mimetype: Mimetype.mpeg, caption: gb.message});
 
             }
 
