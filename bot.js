@@ -12,7 +12,7 @@ const Heroku = require('heroku-client');
 
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
 
-const {Message, StringSession, Image, Video} = require('./WhatsSiri/');
+const {Message, StringSession, Image, Video} = require('./whatssiri/');
 
 const { DataTypes } = require('sequelize');
 
@@ -74,6 +74,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 
 const plugindb = require('./plugins/sql/plugin');
 
+// Yalnızca bir kolaylık. https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 
 String.prototype.format = function () {
 
@@ -113,7 +114,7 @@ Array.prototype.remove = function() {
 
 };
 
-async function WhatsSiri () {
+async function whatsSiri () {
 
     await config.DATABASE.sync();
 
@@ -177,7 +178,7 @@ async function WhatsSiri () {
 
     conn.on('connecting', async () => {
 
-        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
+        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Siri')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
@@ -217,7 +218,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                 else {
 
-                    return console.log(chalk.redBright.bold('⚠️ Yüklenen Plugin Silinmiş veya Bozuk! Lütfen Database Reset Atın! \n Check: https://t.me/whatssiri'));
+                    return console.log(chalk.redBright.bold('⚠️ Yüklenen Plugin Silinmiş veya Bozuk! Lütfen Database Reset Atın!'));
 
                 }     
 
@@ -275,7 +276,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
         if (config.WORKTYPE == 'public') {
 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { await conn.sendMessage(conn.user.jid, '*WhatsSiri Public Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*WhatsSiri Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+            if (config.LANG == 'TR' || config.LANG == 'AZ') { await conn.sendMessage(conn.user.jid, '*WhatsSiri Public Olarak Çalışıyor!*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz herkese açık bir şekilde çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:private_ *komutunu kullanın.*\n\n*WhatsSiri Kullandığın İçin Teşekkürler 💌*', MessageType.text);
 
                 await git.fetch();
 
@@ -319,7 +320,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
             }
 
-            else { await conn.sendMessage(conn.user.jid, '*WhatsSiri Working as Public! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using WhatsSiri 💌*', MessageType.text);
+            else { await conn.sendMessage(conn.user.jid, '*WhatsSiri Working as Public!*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as public. To change it, use* _.setvar WORK_TYPE:private_\n\n*Thanks for using WhatsSiri 💌*', MessageType.text);
 
                 await git.fetch();
 
@@ -367,7 +368,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
         else if (config.WORKTYPE == 'private') { 
 
-            if (config.LANG == 'TR' || config.LANG == 'AZ') { await conn.sendMessage(conn.user.jid, '*WhatsSiri Private Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*WhatsSiri Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+            if (config.LANG == 'TR' || config.LANG == 'AZ') { await conn.sendMessage(conn.user.jid, '*WhatsSiri Private Olarak Çalışıyor!*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*WhatsSiri Kullandığın İçin Teşekkürler 💌*', MessageType.text);
 
                 await git.fetch();
 
@@ -409,7 +410,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
             }
 
-            else { await conn.sendMessage(conn.user.jid, '*WhatsSiri Working as Private! 🐺*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsSiri 💌*', MessageType.text);
+            else { await conn.sendMessage(conn.user.jid, '*WhatsSiri Working as Private!*\n\n_Please do not try plugins here. This is your LOG number._\n_You can try commands to any chat :)_\n\n*Your bot working as private. To change it, use* _.setvar WORK_TYPE:public_\n\n*Thanks for using WhatsSiri 💌*', MessageType.text);
 
                 await git.fetch();
 
@@ -755,7 +756,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                             else if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
-                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WhatsSiri] --*' + 
+                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [WHATSSIRI] --*' + 
 
                                     '\n*WhatsSiri bir hata gerçekleşti!*'+
 
@@ -773,7 +774,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 if (error.message.includes('URL')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -791,7 +792,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('split')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -809,7 +810,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('Ookla')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -827,7 +828,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('params')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -845,7 +846,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('unlink')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -863,7 +864,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('404')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -881,7 +882,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('reply.delete')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -899,7 +900,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('load.delete')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -917,7 +918,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('400')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -935,7 +936,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('decode')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -953,7 +954,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('unescaped')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Hata Okundu!``` ==========' +
 
@@ -985,7 +986,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                             else {
 
-                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [WhatsSiri] --*' + 
+                                await conn.sendMessage(conn.user.jid, '*-- ERROR REPORT [WHATSSIRI] --*' + 
 
                                     '\n*WhatsSiri an error has occurred!*'+
 
@@ -1005,7 +1006,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 if (error.message.includes('URL')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1023,7 +1024,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('split')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1041,7 +1042,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('Ookla')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1059,7 +1060,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('params')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1077,7 +1078,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('unlink')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved``` ==========' +
 
@@ -1095,7 +1096,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('404')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1113,7 +1114,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('reply.delete')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1131,7 +1132,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('load.delete')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1149,7 +1150,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('400')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1167,7 +1168,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('decode')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1185,7 +1186,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
                                 else if (error.message.includes('unescaped')) {
 
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WhatsSiri] ⚕️*' + 
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [WHATSSIRI] ⚕️*' + 
 
                                         '\n========== ```Error Resolved!``` ==========' +
 
@@ -1257,4 +1258,4 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please Wait.')}`);
 
 }
 
-WhatsSiri();
+whatsSiri();
